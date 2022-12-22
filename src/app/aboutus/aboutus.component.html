@@ -1,0 +1,16 @@
+<div class="container">
+
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+        </tr>
+        <tr *ngfor = "let employee for employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.email}}</td>
+
+        </tr>
+    </table> 
+</div>
