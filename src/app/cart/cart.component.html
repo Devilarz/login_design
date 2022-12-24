@@ -1,0 +1,10 @@
+<div class="card">
+    <h2>{{item.label}}</h2>
+    <p>{{item.description}}</p>
+    <p> Available Item : {{item.availabilecount}}</p>
+    <div class="image">
+        <img [src] ="item.imageUrl">
+    </div>
+    <p>$ {{item.price}}</p>
+    <input type="button" value="Buy" (click)="buyitem()"/>
+</div>

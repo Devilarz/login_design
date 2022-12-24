@@ -1,0 +1,13 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    contain: cover;
+
+}

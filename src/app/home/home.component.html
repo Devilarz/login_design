@@ -1,10 +1,26 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Welcome</span>
-    <span class="example-spacer"></span>
-    <button routerLink="login" class= "mar-but" mat-raised-button>Login</button>
-    <button routerLink="register" class= "mar-but" mat-raised-button>Register</button>
-  </mat-toolbar-row>
-</mat-toolbar>
-
-<router-outlet></router-outlet>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li >
+          <img style="width: 50px;" src="./src/assets/FryBite.png" alt="logo" >
+        </li> -->
+        <div class="image">
+          <img  style="width: 150px; height: 150px;
+          margin: -50px; margin-bottom: -67px; padding-top: 10px;" src="./assets/FryBite.png" >
+      </div>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink = "/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink = "/cart">Cart</a>
+        </li>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link" routerLink = "/aboutus">About us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-success" type="submit">Logout</button>
+      </form>
+  </div>
+</nav>
